@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-dark d-flex justify-content-end"
+    >
+      <a class="navbar-brand text-white" href="#">Bharat Dave</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="features.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled text-danger"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img src="./Plant.jpg" class="card-img-top" alt="..." />
+    <div class="jumbotron jumbotron-fluid bg-white mt-0">
+      <div class="container">
+        <h1 class="display-2">Welcome to my portfolio site!</h1>
+        <p class="lead text-right">
+          This is a modified jumbotron that occupies the entire horizontal space
+          of its parent.
+        </p>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid bg-info">
+      <div class="container">
+        <h1 class="display-2">Projects</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img src="./merc.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Merc Project</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img src="./porche.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Porsche Project</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="./porche.jpg" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img src="./lamborghini.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lamborghini Project</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+    <div class="jumbotron jumbotron-fluid bg-success">
+      <div class="container">
+        <h1 class="display-3">What I do</h1>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid text-left">
+      <div class="container">
+        <h2 class="display-4">
+          Specializing in working with web development technologies such as
+          HTML5,CSS3 and JS and passionate about building responsive websites
+        </h2>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-warning text-right">
+      <div class="container">
+        <h1 class="display-3">Contact</h1>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid text-left">
+      <div class="container">
+        <h1 class="display-4"><a href="#">sampleemail@example.com</a></h1>
+        <h1 class="display-4">
+          <a href="#">linkedin.com/linkedinprofileid</a>
+        </h1>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        console.log("ready!");
+
+        $(".card").hover(
+          function () {
+            $(this).addClass("shadow-lg").css("cursor", "pointer");
+          },
+          function () {
+            $(this).removeClass("shadow-lg");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
